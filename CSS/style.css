@@ -1,0 +1,265 @@
+*{
+    
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root {
+    /* Marca - mismo Hue 330, variando Lightness */
+    --color-primario: hsl(330, 85%, 55%); /* #ec3a8b */
+    --color-primario-claro: hsl(330, 85%, 72%); /* #f37bb1 */
+    --color-primario-oscuro: hsl(330, 75%, 40%); /* #b3196a */
+
+    /* Acento (cian) */
+    --color-acento: hsl(190, 90%, 45%); /* #0db4da */
+    --color-acento-oscuro: hsl(190, 90%, 35%); /* #0a8caa */
+
+    /* Neutros */
+    --color-fondo: hsl(220, 30%, 98%); /* #f8fafc */
+    --color-superficie: hsl(0, 0%, 100%); /* #ffffff */
+    --color-borde: hsl(220, 15%, 88%); /* #dcdfe6 */
+    --color-texto: hsl(220, 25%, 18%); /* #232b3a */
+    --color-texto-suave: hsl(220, 12%, 45%); /* #666f80 */
+    --color-fondo: hsl(141, 79%, 63%); /* #f8fafc */
+}
+
+body {
+    font-family: 'nunito', sans-serif;
+    background-image: url('../assest/img/fondo.png');
+    background-size: cover;
+    color: var(--color-texto);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+.logo {
+    display: flex;
+    align-items: center; /* Centra el texto y el logo verticalmente */
+    gap: 10px; /* Controla el espacio de separación entre la imagen y el texto */
+}
+
+.logo-icono {
+    height: 40px; /* Ajusta este número para hacer el logo más grande o más chico */
+    width: auto;  /* Esto asegura que la imagen no se deforme */
+}
+h1,| h2, h3, .logo {
+    font-family: 'Fredoka', cursive;
+}
+
+h1{
+    font-size: 2.5rem;
+
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1rem;
+}
+
+header{
+    background-color: var(--color-superficie);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 1.5rem;
+    color: var(--color-primario);
+    font-weight: 700;
+}
+
+.nav__links{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+.nav__link {
+    text-decoration: none;
+    color: var(--color-texto-suave);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.nav__link:hover {
+    color: var(--color-primario);
+}
+
+main{
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+#Generador h2 {
+    margin-bottom: 2.5rem;
+    color: var(--color-primario);
+
+}
+
+#Generador p {
+    margin: 0 auto 3rem;
+    max-width: 600px;
+    color: var(--color-texto-suave);
+}
+
+/* --------------------------- boton de generador --------------------------- */
+.controles {
+    display: flex;
+    
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;     /* Centra los elementos verticalmente */
+    gap: 30px;               /* Espacio entre el botón y el input */
+    padding: 25px;
+    background-color: #ffffff; 
+    border-radius: 15px;     /* Bordes bien redondeados */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra suave para darle profundidad */
+    flex-wrap: wrap;         /* Evita que se rompa en pantallas pequeñas */
+    margin: 20px auto;       /* Lo centra en la pantalla si tiene un ancho máximo */
+    max-width: 600px;
+}
+.controles__campo{
+    display: flex;
+    
+}
+.controles__label{
+    font-size: 0.95rem;
+    flex-direction: column;
+    align-items:end;
+    font-weight: 600;
+    color: var(--color-texto-suave);
+    
+}
+input[type="number"] {
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 70px; /* Ancho fijo para que quede prolijo */
+    text-align: center;
+}
+
+
+.generate-btn {
+    margin-top: auto; 
+    padding: 0.6rem 1rem;
+    background-color: var(--color-acento);
+    color: var(--color-superficie);
+    border: none;
+    border-radius: 6px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.generate-btn:hover {
+    background-color: var(--color-primario-oscuro);
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+.descripcion {
+    margin-bottom: 2rem;
+    color: var(--color-superficie);
+}
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.swatch {
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swatch:hover, .swatch:focus {
+    transform: scale(1.3);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.swatch__color {
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-primario);
+}
+
+/* Modificadores de color según tus clases HTML */
+.swatch__color__claro { background-color: var(--color-primario-claro); }
+.swatch__color__oscuro { background-color: var(--color-primario-oscuro); }
+.swatch__color__acento { background-color: var(--color-acento); }
+
+.swatch__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+    flex-grow: 1;  
+}
+
+.swatch__nombre {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-texto);
+    margin-bottom: 0.5rem;
+}
+
+.swatch__codigo {
+    font-size: 0.875rem;
+    color: var(--color-texto-suave);
+    margin-bottom: 1rem;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    color: var(--color-texto-suave);
+    border-top: 1px solid var(--color-borde);
+}
+
+@keyframes swatch-aparecer {
+    from { 
+        opacity: 0;
+            transform: translateY(20px);
+    }
+    to { opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+.swatch {
+    animation: swatch-aparecer 0.5s ease forwards;
+}

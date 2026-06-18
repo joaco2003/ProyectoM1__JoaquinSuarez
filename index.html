@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Proyecto FT76</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar"><span class="logo">
+        <img src="assest/img/logo.png" alt="Logo ColorFly" class="logo-icono">
+        ColorFly
+    </span>
+            <ul class="nav__links">
+                <li><a class="nav__link" href="#Generador">Generador</a></li>
+                <li><a class="nav__link" href="#Guardaddos">Guardaddos</a></li>
+                <li><a class="nav__link" href="#Contacto">Contacto</a></li>
+            </ul>
+    </header>
+
+    <main>
+        <section id="Generador">
+            <h2>Generar paleta</h2>
+            <p class="descripcion">En esta sección se encuentra el generador de colores aleatorios, el cual se puede usar para crear paletas de colores personalizadas.</p>
+            
+<!-- -------------------- cantidad de paletas a generar -------------------- -->
+            <div class="controles" id="paleta">
+                <button class="generate-btn" id="generar">Generar paleta</button>
+                <div class="controles__campo">
+                    <label class="controles__label" for="cantidad">Cantidad de paletas a generar:</label>
+                    <input type="number" id="cantidad" min="1" max="100" value="5">
+                </div>    
+            </div>
+            
+            
+            <section class="galeria" id="galeria"></section> 
+            
+    
+        </section>
+
+    </main>
+    <footer id="Contacto">
+        <p>© 2026 Colorfly1. Todos los derechos reservados.</p>
+    </footer>
+    <script src="JS/javascript.js"></script>
+</body>
+</html>
