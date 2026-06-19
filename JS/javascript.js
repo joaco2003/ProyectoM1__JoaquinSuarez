@@ -95,14 +95,14 @@ function renderPaleta(cantidad) {
 }
 
 const boton = document.getElementById("generar");
-const inputCantidad = document.getElementById("cantidad");
+const selector = document.getElementById("cantidad");
 /* const generador = document.querySelector("#generador"); */
 
 if(boton) {
     boton.addEventListener("click", function()  {
         
 
-        renderPaleta(parseInt(inputCantidad.value) || 10);
+        renderPaleta(parseInt(selector.value));
 
 });
 

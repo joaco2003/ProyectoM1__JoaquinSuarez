@@ -26,15 +26,19 @@
     <main>
         <section id="Generador">
             <h2>Generar paleta</h2>
-            <p class="descripcion">En esta sección se encuentra el generador de colores aleatorios, el cual se puede usar para crear paletas de colores personalizadas.</p>
+            <span id="descripcion">En esta sección se encuentra el generador de colores aleatorios, el cual se puede usar para crear paletas de colores personalizadas.</span>
             
 <!-- -------------------- cantidad de paletas a generar -------------------- -->
             <div class="controles" id="paleta">
                 <button class="generate-btn" id="generar">Generar paleta</button>
                 <div class="controles__campo">
                     <label class="controles__label" for="cantidad">Cantidad de paletas a generar:</label>
-                    <input type="number" id="cantidad" min="1" max="100" value="5">
-                </div>    
+                    <select class="select" id="cantidad">
+                        <option value="6">6 colores</option>
+                        <option value="8">8 colores</option>
+                        <option value="9">9 colores</option>
+                    </select>
+                </div>
             </div>
             
             

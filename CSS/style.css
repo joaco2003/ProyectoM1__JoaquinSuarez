@@ -113,20 +113,27 @@ main{
     max-width: 600px;
     color: var(--color-texto-suave);
 }
+#descripcion{
+    margin: 0 auto 3rem;
+    max-width: 600px;
+    font-family: "Nunito", sans-serif;
+    color: var(--color-superficie);
+}
+
 
 /* --------------------------- boton de generador --------------------------- */
 .controles {
     display: flex;
     
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center;     /* Centra los elementos verticalmente */
-    gap: 30px;               /* Espacio entre el botón y el input */
+    justify-content: center; 
+    align-items: center;     
+    gap: 30px;               
     padding: 25px;
     background-color: #ffffff; 
-    border-radius: 15px;     /* Bordes bien redondeados */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra suave para darle profundidad */
-    flex-wrap: wrap;         /* Evita que se rompa en pantallas pequeñas */
-    margin: 20px auto;       /* Lo centra en la pantalla si tiene un ancho máximo */
+    border-radius: 15px;     
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    flex-wrap: wrap;         
+    margin: 20px auto;       
     max-width: 600px;
 }
 .controles__campo{
@@ -141,16 +148,16 @@ main{
     color: var(--color-texto-suave);
     
 }
-input[type="number"] {
-    padding: 10px 15px;
+.select {
+    font-family: "Nunito", sans-serif;
     font-size: 1rem;
-    font-weight: 600;
+    padding: 0.65rem 2.25rem 0.65rem 0.9rem ;
     color: #333;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
-    outline: none;
+    cursor: pointer;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    width: 70px; /* Ancho fijo para que quede prolijo */
+    width: auto; /* Ancho fijo para que quede prolijo */
     text-align: center;
 }
 
