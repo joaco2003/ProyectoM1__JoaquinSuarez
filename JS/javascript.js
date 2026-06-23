@@ -39,7 +39,7 @@ function crearSwatch(colorHSL, colorHex, nombre, index) {
 
     const elcodigo = document.createElement("p");
     elcodigo.className = "swatch__codigo";
-    elcodigo.textContent = colorHex + " · " + colorHSL;
+    elcodigo.textContent = colorHex;
 
     info.append(nombreP, elcodigo);
     swatch.append(color, info);
@@ -71,15 +71,13 @@ function renderPaleta(cantidad) {
         });
         paleta = nueva;
     }
-
-    // Regenerar solo los que NO están bloqueados
-    paleta = paleta.map(item =>
-        item.locked ? item : { ...generarColor(), locked: false }
-    );
-
+    
+    
     galeria.innerHTML = "";
     paleta.forEach((item, i) => {
-        const swatch = crearSwatch(item.hsl, item.hex, "Color " + (i + 1), i);
+        const formato = document.getElementById('formato').value;
+        const codigo = formato === 'hex' ? item.hex : item.hsl;
+        const swatch = crearSwatch(item.hsl,  codigo, "Color " + (i + 1), i);
         galeria.appendChild(swatch);
     });
 }
@@ -95,7 +93,12 @@ if (boton) {
 } else {
     console.log("no se encontro el boton");
 }
-
+boton.addEventListener("click", function () {
+    paleta = paleta.map(item =>
+        item.locked ? item : { ...generarColor(), locked: false }
+    );
+    renderPaleta(parseInt(selector.value));
+});
 renderPaleta(10);
 /* -------------------------------------------------------------------------- */
 

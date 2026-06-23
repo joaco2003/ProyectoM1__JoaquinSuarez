@@ -162,6 +162,18 @@ main{
     text-align: center;
 }
 
+.formato{
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    padding: 0.65rem 2.25rem 0.65rem 0.9rem ;
+    color: #333;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: auto; /* Ancho fijo para que quede prolijo */
+    text-align: center;
+}
 
 .generate-btn {
     margin-top: auto; 
