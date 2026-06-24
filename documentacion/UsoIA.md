@@ -27,6 +27,6 @@ La lógica de bloqueo de colores es bastante sencilla. La idea es guardar un est
 **Resultado:** [Opción interactiva para cambiar la visualización de los códigos de color entre Hexadecimal y HSL.]
 **Captura de pantalla:**
 ![Consulta a la IA](./Capturas/caso2.png)
-![Consulta a la IA](./Capturas/caso2(2).png)
+![Consulta a la IA](./Capturas/caso2-2.png)
 
-![resultado](./Capturas/ResultadoC2.png)
+![Resultado](./Capturas/ResultadoC2.png)
