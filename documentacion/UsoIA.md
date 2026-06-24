@@ -9,8 +9,7 @@ Durante el desarrollo de este proyecto, se utilizó Inteligencia Artificial como
 
 ### Caso 1: Bloqueador
 **Objetivo:** Crear un bloqueador de colores.
-**Prompt utilizado:**
-> "Yo hice una pagina de crear paletas de colores aleatorias, como es el codigo para que la paleta de color se bloquee"
+**Prompt utilizado:**  "Yo hice una pagina de crear paletas de colores aleatorias, como es el codigo para que la paleta de color se bloquee"
 **Resultado:**
 La lógica de bloqueo de colores es bastante sencilla. La idea es guardar un estado por cada color indicando si está bloqueado, y al generar nuevos colores aleatorios, saltear los que están bloqueados. 
 **Captura de pantalla:**
@@ -26,7 +25,7 @@ La lógica de bloqueo de colores es bastante sencilla. La idea es guardar un est
 > "[Quiero agregar un toggle para cambiar cómo se muestra el código de color en cada swatch (HEX o HSL).]"
 **Resultado:** [Opción interactiva para cambiar la visualización de los códigos de color entre Hexadecimal y HSL.]
 **Captura de pantalla:**
-![Consulta a la IA](./Capturas/caso2.png)
-![Consulta a la IA](./Capturas/caso2-2.png)
+![Consulta a la IA](./Capturas/Caso2.png)
+![Consulta a la IA](./Capturas/Caso2-2.png)
 
 ![Resultado](./Capturas/ResultadoC2.png)
