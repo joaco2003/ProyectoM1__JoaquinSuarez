@@ -1,3 +1,4 @@
+
 # HOLA 👋, SOY JOAQUIN SUAREZ
 
 ## ESTOY EN UN CURSO FULLSTACK 🔨
@@ -55,8 +56,6 @@ La lógica de bloqueo de colores es bastante sencilla. La idea es guardar un est
 ![Consulta a la IA](assest/Capturas/caso1(2).png)
 
 ![resultado](assest/Capturas/caso1(2).png)
-<!-- ----------------------------------------------------------------------- -->
-
 ### Caso 2: HEX o HSL
 **Objetivo:** [Ej: Crear un toggle eficiente para mostrar el codigo HSL o HEX.]
 **Prompt utilizado:**
@@ -67,3 +66,4 @@ La lógica de bloqueo de colores es bastante sencilla. La idea es guardar un est
 ![Consulta a la IA](assest/Capturas/Caso2-2.png)
 
 ![Resultado](assest/Capturas/ResultadoC2.png)
+
