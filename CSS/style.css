@@ -57,13 +57,13 @@ header{
 }
 .logo {
     display: flex;
-    align-items: center; /* Centra el texto y el logo verticalmente */
-    gap: 10px; /* Controla el espacio de separación entre la imagen y el texto */
+    align-items: center; 
+    gap: 10px; 
 }
 
 .logo-icono {
-    height: 40px; /* Ajusta este número para hacer el logo más grande o más chico */
-    width: auto;  /* Esto asegura que la imagen no se deforme */
+    height: 40px; 
+    width: auto;  
 }
 .navbar{
     display: flex;
@@ -125,21 +125,21 @@ main{
 /* --------------------------- boton de generador --------------------------- */
 .controles {
     display: flex;
-    
     justify-content: center; 
     align-items: center;     
     gap: 30px;               
-    padding: 25px;
+    padding: 40px;
     background-color: #ffffff; 
     border-radius: 15px;     
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
     flex-wrap: wrap;         
     margin: 20px auto;       
-    max-width: 600px;
+    max-width: 800px;
 }
 .controles__campo{
     display: flex;
-    
+    align-items: center;
+    gap: 12px;
 }
 .controles__label{
     font-size: 0.95rem;
@@ -158,11 +158,11 @@ main{
     border-radius: 8px;
     cursor: pointer;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    width: auto; /* Ancho fijo para que quede prolijo */
+    width: auto;
     text-align: center;
 }
 
-.formato{
+#formato{
     font-family: "Nunito", sans-serif;
     font-size: 1rem;
     padding: 0.65rem 2.25rem 0.65rem 0.9rem ;
@@ -171,8 +171,9 @@ main{
     border-radius: 8px;
     cursor: pointer;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    width: auto; /* Ancho fijo para que quede prolijo */
+    width: auto; 
     text-align: center;
+    overflow: hidden;
 }
 
 .generate-btn {
@@ -220,7 +221,7 @@ main{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.03);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     
-  opacity: 1; /* ya es el estado "to" */
+    opacity: 1; 
     animation: swatch-aparecer 0.5s ease;
 }
 
@@ -277,7 +278,7 @@ main{
 
 /* -------------------------- bloqueador de colores ------------------------- */
 .swatch__color {
-    position: relative; /* necesario para posicionar el botón */
+    position: relative; 
 }
 
 .swatch__lock {

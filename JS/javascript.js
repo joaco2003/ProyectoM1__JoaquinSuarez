@@ -40,6 +40,11 @@ function crearSwatch(colorHSL, colorHex, nombre, index) {
     const elcodigo = document.createElement("p");
     elcodigo.className = "swatch__codigo";
     elcodigo.textContent = colorHex;
+    elcodigo.addEventListener("click", function () {
+    navigator.clipboard.writeText(elcodigo.textContent);
+    elcodigo.textContent = "¡Copiado!";
+    setTimeout(() => elcodigo.textContent = colorHex, 1000);
+    });
 
     info.append(nombreP, elcodigo);
     swatch.append(color, info);
